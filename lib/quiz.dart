@@ -33,10 +33,18 @@ class _QuizState extends State<Quiz> {
 
   @override
   Widget build(context) {
-    final screenWidget =
-        activeSwitchScreen == 'start-screen'
-            ? StartScreen(switchScreen)
-            : QusetionsScreen();
+    // // Page Routing second away formatting
+    // final screenWidget =
+    //     activeSwitchScreen == 'start-screen'
+    //         ? StartScreen(switchScreen)
+    //         : QusetionsScreen();
+
+    // way of three
+
+    Widget screenWidget = StartScreen(switchScreen);
+    if (activeSwitchScreen == 'questions-screen') {
+      screenWidget = QusetionsScreen();
+    }
     return MaterialApp(
       home: Scaffold(
         body: Container(
