@@ -9,6 +9,17 @@ class QusetionsScreen extends StatefulWidget {
 class _QusetionsScreenState extends State<QusetionsScreen> {
   @override
   Widget build(context) {
-    return Container();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      // crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text('question'),
+        SizedBox(height: 40),
+        ElevatedButton(onPressed: () {}, child: Text('Answer 1')),
+        ElevatedButton(onPressed: () {}, child: Text('Answer 2')),
+        ElevatedButton(onPressed: () {}, child: Text('Answer 3')),
+        ElevatedButton(onPressed: () {}, child: Text('Answer 4')),
+      ],
+    );
   }
 }
