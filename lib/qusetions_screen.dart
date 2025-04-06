@@ -23,10 +23,9 @@ class _QusetionsScreenState extends State<QusetionsScreen> {
             style: TextStyle(color: Colors.white, fontSize: 24),
           ),
           SizedBox(height: 30),
-          AnswerButton(answerTest: currentQuestion.answers[0], onTap: () {}),
-          AnswerButton(answerTest: currentQuestion.answers[1], onTap: () {}),
-          AnswerButton(answerTest: currentQuestion.answers[2], onTap: () {}),
-          AnswerButton(answerTest: currentQuestion.answers[3], onTap: () {}),
+          ...currentQuestion.answers.map(
+            (answer) => AnswerButton(answerTest: answer, onTap: () {}),
+          ),
         ],
       ),
     );
