@@ -11,11 +11,11 @@ class QusetionsScreen extends StatefulWidget {
 class _QusetionsScreenState extends State<QusetionsScreen> {
   @override
   Widget build(context) {
-    final currentQuestion = questions[0];
+    final currentQuestion = questions[2];
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: EdgeInsets.all(40),
+        margin: EdgeInsets.fromLTRB(30, 30, 30, 30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
