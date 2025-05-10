@@ -32,6 +32,14 @@ class _QuizState extends State<Quiz> {
       });
     }
   }
+  // restartQuiz function
+
+  void restartQuiz() {
+    setState(() {
+      selectedAnswers.clear();
+      activeSwitchScreen = 'questions-screen';
+    });
+  }
 
   @override
   Widget build(context) {
@@ -40,7 +48,10 @@ class _QuizState extends State<Quiz> {
       screenWidget = QusetionsScreen(onSelectAnswer: chooseAnswer);
     }
     if (activeSwitchScreen == 'result-screen') {
-      screenWidget = ResultsScreen(chosenAnswers: selectedAnswers);
+      screenWidget = ResultsScreen(
+        chosenAnswers: selectedAnswers,
+        onRestart: restartQuiz,
+      );
     }
 
     return MaterialApp(
