@@ -64,44 +64,44 @@ const questions = [
       ' database management',
     ],
   ),
-  // QuizQuestion(
-  //   questionText:
-  //       'Which of the following is not a feature of Dart programming language?',
-  //   answers: [
-  //     'Multithreading',
-  //     'Asynchronous programming support',
-  //     'Garbage collection',
-  //     'Functional programming support',
-  //   ],
-  // ),
+  QuizQuestion(
+    questionText:
+        'Which of the following is not a feature of Dart programming language?',
+    answers: [
+      'Multithreading',
+      'Asynchronous programming support',
+      'Garbage collection',
+      'Functional programming support',
+    ],
+  ),
 
-  // QuizQuestion(
-  //   questionText:
-  //       'Which of the following is the correct syntax for defining a variable in Dart?',
-  //   answers: ['var x = 5', 'x = 5', 'int x = 5', 'variable x = 5'],
-  // ),
-  // QuizQuestion(
-  //   questionText: 'What is the purpose of the “final” keyword in Dart?',
-  //   answers: [
-  //     ' cannot be changed after its initial assignment',
-  //     'To define a constant variable',
-  //     ' can only be accessed within its scope',
-  //     'can be accessed from any scope',
-  //   ],
-  // ),
-  // QuizQuestion(
-  //   questionText:
-  //       'Which of the following is the correct syntax for defining a function in Dart?',
-  //   answers: [
-  //     ' void foo() {}',
-  //     'function foo() {}',
-  //     'int foo() {}',
-  //     'dynamic foo() {}',
-  //   ],
-  // ),
-  // QuizQuestion(
-  //   questionText:
-  //       'Which of the following operators is used for null-aware access in Dart?',
-  //   answers: ['?', '==', '!=', '!!'],
-  // ),
+  QuizQuestion(
+    questionText:
+        'Which of the following is the correct syntax for defining a variable in Dart?',
+    answers: ['var x = 5', 'x = 5', 'int x = 5', 'variable x = 5'],
+  ),
+  QuizQuestion(
+    questionText: 'What is the purpose of the “final” keyword in Dart?',
+    answers: [
+      ' cannot be changed after its initial assignment',
+      'To define a constant variable',
+      ' can only be accessed within its scope',
+      'can be accessed from any scope',
+    ],
+  ),
+  QuizQuestion(
+    questionText:
+        'Which of the following is the correct syntax for defining a function in Dart?',
+    answers: [
+      ' void foo() {}',
+      'function foo() {}',
+      'int foo() {}',
+      'dynamic foo() {}',
+    ],
+  ),
+  QuizQuestion(
+    questionText:
+        'Which of the following operators is used for null-aware access in Dart?',
+    answers: ['?', '==', '!=', '!!'],
+  ),
 ];
